@@ -17,17 +17,22 @@ plt.plot(x, sin_y, linewidth=3, label='Sine')
 # Setting the values for Cosine in the cos_y variable
 cos_y = np.cos(x)
 
+#Setting the values for Sine in the sin_y variable
+tan_y = np.tan(x)
+
 # Plotting on same axis with x variable for X-axis and cos_y
 # for Y-axis. The linewidth and label arguments do the same
 # thing as previously described above the first plt.plot
 plt.plot(x, cos_y, linewidth=3, label='Cosine')
 
+plt.plot(x,tan_y, linewidth=3, label='Tangent')
+
 # Adding appropriate title
-plt.title('One Period Plot of Sine and Cosine')
+plt.title('One Period Plot of Sine, Cosine and Tangent')
 
 # Labeling X-axis and Y-axis as appropriate
 plt.xlabel('X values from Zero to 2Pi')
-plt.ylabel('Sine and Cosine Values')
+plt.ylabel('Sine, Cosine, and Tangent Values')
 
 # Including the legend to differentiate the two lines
 plt.legend()
